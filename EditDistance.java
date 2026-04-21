@@ -6,7 +6,7 @@ public class EditDistance {
 
         int[][] dp = new int[m + 1][n + 1];
 
-        // base cases
+    
         for (int i = 0; i <= m; i++) {
             dp[i][0] = i;
         }
@@ -14,7 +14,7 @@ public class EditDistance {
             dp[0][j] = j;
         }
 
-        // fill dp table
+        
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= n; j++) {
                 if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
@@ -41,8 +41,8 @@ public class EditDistance {
 
     public static void main(String[] args) {
 
-        runTest("horse", "ros");         // 3
-        runTest("intention", "execution"); // 5
-        runTest("abc", "yabd");          // 2
+        runTest("horse", "ros");        
+        runTest("intention", "execution"); 
+        runTest("abc", "yabd");         
     }
 }
