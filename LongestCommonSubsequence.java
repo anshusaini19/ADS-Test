@@ -28,8 +28,8 @@ public class LongestCommonSubsequence {
 
     public static void main(String[] args) {
 
-        runTest("abcde", "ace"); // 3
-        runTest("abc", "abc");   // 3
-        runTest("abc", "def");   // 0
+        runTest("abcde", "ace"); 
+        runTest("abc", "abc");  
+        runTest("abc", "def");   
     }
 }
